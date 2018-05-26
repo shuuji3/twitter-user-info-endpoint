@@ -1,0 +1,25 @@
+{
+    "name": "twitter-user-info-endpoint",
+    "description": "Simple proxy to the Twitter user information.",
+    "keywords": [
+        "twitter"
+    ],
+    "repository": "https://github.com/shuuji3/twitter-user-info-endpoint",
+    "env": {
+        "DJANGO_SECRET_KEY": {
+            "description": "Secret key used in the Django settings file. Should be randomly generated 50 length ascii letters.",
+            "generator": "secret",
+            "required": true
+        },
+        "TWITTER_CONSUMER_KEY": {
+            "description": "Consumer key to use the Twitter API.",
+            "value": "",
+            "required": true
+        },
+        "TWITTER_CONSUMER_SECRET": {
+            "description": "Consumer secret to use the Twitter API.",
+            "value": "",
+            "required": true
+        }
+    }
+}
